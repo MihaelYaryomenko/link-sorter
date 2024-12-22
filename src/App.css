@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --darker-red: #d98179;
+    --radish-color: #f2695c;
+    --greenish-color: #567358;
+    --less-green: #a5bfa4;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100vw;
+    height: 80px;
+    outline: 4px solid var(--greenish-color);
+    -webkit-box-shadow: 0px -4px 10px 0px rgba(34, 60, 80, 0.1);
+    -moz-box-shadow: 0px -4px 10px 0px rgba(34, 60, 80, 0.1);
+    box-shadow: 0px -4px 10px 0px rgba(34, 60, 80, 0.1);
+}
+
+#main-container {
+    display: flex;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    justify-content: center;
+}
+
+#main-main-container {
+    background-color: white;
+    height: calc(100vh - 80px);
+    width: 1215px;
+}
+
+#text-container {
+    margin-bottom: 36px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.textarea-shadow {
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.column-functional-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#odd-cases {
+    font-size: 32px;
+    font-family: "Afacad Flux", serif;
+    font-weight: 500;
+
+    color: #4f4f4f;
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    background-color: var(--darker-red);
+    width: 355px;
+    height: 67px;
+    border-radius: 17px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 0px 10px 0px 38px;
+    accent-color: var(--less-green);
+    :hover {
+        cursor: pointer;
+    }
+}
+
+#right-area {
+    margin-left: 66px;
+}
+
+#sorting-p {
+    position: relative;
+    right: 28px;
+    color: var(--radish-color);
+    font-size: 96px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#links-p {
+    margin-right: 72px;
+    margin-left: 31px;
+    font-size: 96px;
+    font-family: "Afacad Flux", serif;
+    font-weight: 500;
+    font-style: bold;
+    color: var(--greenish-color);
+}
+
+#github-svg {
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 4%;
+}
+
+#github-logo {
+    position: relative;
+}
+
+#ellipse-bg {
+    position: relative;
+    top: 15px;
+    left: 4%;
+}
+
+#github-p {
+    margin-top: 3px;
+    font-weight: 500;
+    margin-left: 30px;
+    font-size: 32px;
+    font-family: "Afacad Flux", serif;
+    color: var(--greenish-color);
+}
+
+#paragraph-container-no-reason {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#github-link {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+}
+
+#convert-btn-container {
+    margin-top: 36px;
+    :hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    :active {
+        cursor: wait;
+        opacity: 0.8;
+    }
+    width: fit-content;
+
+    display: relative;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#input-area {
+    border: var(--less-green) 4px solid;
+    width: 575px;
+    height: 343px;
+    resize: none;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#output-area {
+    border: var(--darker-red) 4px solid;
+    width: 575px;
+    height: 343px;
+    resize: none;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#textarea-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#convert-btn {
+    background-color: var(--less-green);
+    border-radius: 17px;
+    width: 355px;
+    height: 67px;
+    position: absolute;
+    z-index: 1;
+    border: none;
+    font-weight: 500;
+    font-size: 32px;
+    color: #4f4f4f;
+}
+
+#shadow-convert-btn {
+    top: 1px;
+    display: absolute;
+    background-color: #4f4f4f;
+    width: calc(355px + 9px);
+    height: calc(67px + 9px);
+    border-radius: 17px;
+}
+
+#not-odd-cases {
+    margin-top: 36px;
+    border: var(--less-green) 4px solid;
+    width: 575px;
+    height: 60px;
+    resize: none;
+    border-radius: 20px;
+    padding: 3px 0px 0px 8px;
+    font-size: 32px;
+    font-family: "Afacad Flux", serif;
+    font-weight: 500;
+    overflow: hidden;
+}
